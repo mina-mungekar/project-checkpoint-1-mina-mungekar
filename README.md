@@ -13,7 +13,7 @@
  
  ### Clocking speed
  
- I haven't the foggiest clue.
+ The clock input can be toggled every 10 nanoseconds in order to accurately simulate a register file. Toggling the input any faster typically will result in read port errors, as the clock toggles faster than the the module can write information to the appropriate register. The read ports will display numerical values up until the clock toggles at around 7 ns; at that point, most of the values read appear to be x's, or, unknowns.
  
  ### Bugs and Issues
  
